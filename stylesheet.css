@@ -1,0 +1,91 @@
+body {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+#content {
+    background-color: Bisque;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 150%;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#postamble {
+    background-color: Bisque;
+    width: 75%;
+    margin: 10px auto;
+    line-height: 150%;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#postamble p {
+    text-align: center
+}
+
+#table-of-contents {
+    float: right;
+    width: 25%;
+}
+
+.outline-2 {
+    width: 75%
+}
+
+#outline-container-2 {
+    display: none;
+}
+
+#sec-1 {
+    display: none;
+}
+
+#table-of-contents h2 {
+    display: none;
+}
+
+.timestamp {
+    font-size: 14px;
+}
+
+li:first-child {
+    display: none;
+}
+
+li:nth-child(2) {
+    font-size: 14px;
+    list-style-type: none;
+    line-height: 120%;
+    padding: 10px 0px;
+}
+
+li:nth-child(2) a:link {
+    color: #000000;
+    text-decoration: none;
+    cursor: default;
+}
+
+li:nth-child(2) a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*
+This file is part of Andrew's Blog Pages.
+
+Andrew's Blog Pages is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Andrew's Blog Pages is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Andrew's Blog Pages. If not, see <http://www.gnu.org/licenses/>.
+*/

@@ -1,0 +1,22 @@
+# -*- org-export-html-postamble: "<p><span class=\"author\">%a</span> | <span class=\"creator\">%c</span> | %d"; -*-
+#+EMAIL: andrew.cowper@slothrop.net
+#+OPTIONS: email:t num:nil
+#+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+#+TITLE: Some Clojure Projects
+* Intro
+A little bit about this website.
+* I am Andrew Cowper, a programmer who likes to work in Clojure.
+Various projects and activities related to the Clojure programming language.
+* <2013-04-09> Org Babel Talk
+Here is some text to see about all this stuff org mode can give you it
+does so much. Loads of this stuff is quite interesting so lets see how
+the words wrap when we get there.
+
+And here is a seconds paragrpah.
+* <2012-07-31> Maze Game Dojo
+[[https://github.com/bloat/maze-game][The repository]]
+[[http://git.slothrop.net/maze-game/index.html][The results]]
+* <2012-06-30> ClojureScript Automata
+[[http://git.slothrop.net/automata][The source code]]
+[[https://github.com/bloat/automata][The repository]]
+
