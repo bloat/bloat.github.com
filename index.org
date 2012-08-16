@@ -1,12 +1,10 @@
-# -*- org-export-html-postamble: "<p><span class=\"author\">%a</span> | <span class=\"creator\">%c</span> | %d"; -*-
+# -*- org-export-html-postamble: "<p class=\"contact\">%e | @magic_bloat | Created with <a href=\"http://orgmode.org\">Org</a> | %d</p><p class=\"license\"><a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by/3.0/80x15.png\" /><br /></a>This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons Attribution 3.0 Unported License</a>.</p>"; -*-
 #+EMAIL: andrew.cowper@slothrop.net
 #+OPTIONS: email:t num:nil
 #+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 #+TITLE: Some Clojure Projects
 * Intro
 A little bit about this website.
-* I am Andrew Cowper, a programmer who likes to work in Clojure.
-Various projects and activities related to the Clojure programming language.
 * <2013-04-09> Org Babel Talk
 Here is some text to see about all this stuff org mode can give you it
 does so much. Loads of this stuff is quite interesting so lets see how
