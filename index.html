@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Some Clojure Projects"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2012-08-16 23:19:55 BST"/>
+<meta name="generated" content="2012-08-17 19:08:16 BST"/>
 <meta name="author" content="Andrew Cowper"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -99,60 +99,147 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">Intro</a></li>
-<li><a href="#sec-2"> Org Babel Talk</a></li>
-<li><a href="#sec-3"> Maze Game Dojo</a></li>
-<li><a href="#sec-4"> ClojureScript Automata</a></li>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#org-babel-talk"> Org Babel Talk</a></li>
+<li><a href="#maze-game-dojo"> Maze Game Dojo</a></li>
+<li><a href="#clojurescript-automata"> ClojureScript Automata</a></li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1">Intro</h2>
+<h2 id="intro">Intro</h2>
 <div class="outline-text-2" id="text-1">
 
-<p>A little bit about this website.
-</p></div>
+<p>In which I document various projects and diversions executed using
+<a href="http://clojure.org">Clojure</a>.
+</p>
+</div>
 
 </div>
 
 <div id="outline-container-2" class="outline-2">
-<h2 id="sec-2"><span class="timestamp-wrapper"> <span class="timestamp">2013-04-09</span></span> Org Babel Talk</h2>
+<h2 id="org-babel-talk"><span class="timestamp-wrapper"> <span class="timestamp">2012-09-04</span></span> Org Babel Talk</h2>
 <div class="outline-text-2" id="text-2">
 
-<p>Here is some text to see about all this stuff org mode can give you it
-does so much. Loads of this stuff is quite interesting so lets see how
-the words wrap when we get there.
+<p>I am giving a short <a href="http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487">talk at Skills Matter</a> about Org, Babel and
+Clojure on the 4th of September 2012.
 </p>
-<p>
-And here is a seconds paragrpah.
-</p></div>
+</div>
 
 </div>
 
 <div id="outline-container-3" class="outline-2">
-<h2 id="sec-3"><span class="timestamp-wrapper"> <span class="timestamp">2012-07-31</span></span> Maze Game Dojo</h2>
+<h2 id="maze-game-dojo"><span class="timestamp-wrapper"> <span class="timestamp">2012-07-31</span></span> Maze Game Dojo</h2>
 <div class="outline-text-2" id="text-3">
 
-<p><a href="https://github.com/bloat/maze-game">The repository</a>
-<a href="http://git.slothrop.net/maze-game/index.html">The results</a>
-</p></div>
+<p>The <a href="http://londonclojurians.org">London Clojurians</a> group organise a regular Dojo where people get
+together one or two evenings a month and practice some Clojure coding.
+</p>
+<p>
+Its always a fun event and recently one of the participants wrote a
+server which would allow people to upload code that could play
+battleships. Inspired by this I wrote a similar server which would let
+people write code to solve simple mazes.
+</p>
+<p>
+There are a few parts to the game. There is code to generate new mazes
+randomly. The maze is contained in a square grid, and the algorithm to
+create a new maze picks a random cell in the grid and grows a new maze
+from that point, putting in new passageways and junctions at
+random. It is called a growing tree alogrithm, and as the name
+suggests it essentially generates a tree within the grid, and there
+are no loops in the generated mazes.
+</p>
+<p>
+Players must write a function to solve the mazes. The function takes
+arguments describing the view of the maze from its current position,
+and it must return the move it wants to make. Given two functions, the
+code pits them against each other as they try and solve the same
+maze. The winner is the function that gets to the end in the fewest
+number of moves.
+</p>
+<p>
+The controller portion of the code is responsible for picking the
+functions that will play against each other in each round and keeping
+score.
+</p>
+<p>
+Finally there is a module for the UI, which is a website that displays
+the current scores and allows players to upload new maze solving
+functions.
+</p>
+<p>
+<a href="https://github.com/bloat/maze-game">The code is available</a>, and the README contains a full description of
+how to write a function to play the game, and how to run the server.
+</p>
+<p>
+The dojo is a constrained environment in that it is short, only 90
+minutes or so of coding time, and people come with many different
+levels of Clojure experience. Any activity has to be tractable within
+that time - people love to make progress and have something for the
+show and tell session at then end. I think that (more by luck than
+judgement) I came up with a problem that fitted pretty well. Every
+group managed to produce a function that could solve a maze, and the
+scoreboard showed a pretty wide spread of success when the functions
+were raced against each other. The other good thing about this problem
+is that it is easy to think up a very simple strategy that has a good
+chance of solving mazes, i.e. pick a random move each turn. Lots of
+people started with this technique and it proved to be a good base to
+build from.
+</p>
+<p>
+One thing I did consciously do was to make sure the documentation was
+good enough that people could get the code running quickly - it is a
+real pain in a short dojo to be spending lots of time before you can
+even start thinking about the problem. To this end the README contains
+simple instructions for running the code, generating mazes, and
+testing solver functions.
+</p>
+<p>
+<a href="http://git.slothrop.net/maze-game/index.html">The results</a> of the evening's coding are archived for posterity. Thanks
+to everyone who took part!
+</p>
+</div>
 
 </div>
 
 <div id="outline-container-4" class="outline-2">
-<h2 id="sec-4"><span class="timestamp-wrapper"> <span class="timestamp">2012-06-30</span></span> ClojureScript Automata</h2>
+<h2 id="clojurescript-automata"><span class="timestamp-wrapper"> <span class="timestamp">2012-06-30</span></span> ClojureScript Automata</h2>
 <div class="outline-text-2" id="text-4">
 
-<p><a href="http://git.slothrop.net/automata">The source code</a>
-<a href="https://github.com/bloat/automata">The repository</a>
+<p>I last wrote a web application a long time ago, so I decided it was
+time to dip my toes in the waters again and learn a little bit about
+the modern way to do things. 
 </p>
+<p>
+In the olden days we wrote JSPs for the front end, and EJBs for the
+backend. For this experiment I didn't worry about any backend and
+decided to write a front end application purely in ClojureScript. So I
+learnt a bit about ClojureScript, CSS and a modern JavaScript API - in
+this case Google Closure.
+</p>
+<p>
+I also wanted to try my hand at Literate Programming, the technique
+where a program is made more readable by mixing explanation and
+exposition in with the source code. You can then generate a pure
+source code file, or a nicely formatted document from the same source
+file. For this I used <a href="http://orgmode.org">Org</a> and its <a href="http://orgmode.org/worg/org-contrib/babel/">Babel</a> extension.
+</p>
+<p>
+The program I wrote draws diagrams of one-dimensional cellular
+automata.
+</p>
+<p>
+I exported the main source file to HTML and <a href="http://git.slothrop.net/automata">posted it here</a>.
+</p>
+
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2012-08-16 23:19:55 BST</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2012-08-17 19:08:16 BST</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
 </div>
 </body>
 </html>

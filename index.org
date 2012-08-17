@@ -4,17 +4,92 @@
 #+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 #+TITLE: Some Clojure Projects
 * Intro
-A little bit about this website.
-* <2013-04-09> Org Babel Talk
-Here is some text to see about all this stuff org mode can give you it
-does so much. Loads of this stuff is quite interesting so lets see how
-the words wrap when we get there.
+In which I document various projects and diversions executed using
+[[http://clojure.org][Clojure]].
 
-And here is a seconds paragrpah.
+* <2012-09-04> Org Babel Talk
+I am giving a short [[http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487][talk at Skills Matter]] about Org, Babel and
+Clojure on the 4th of September 2012.
+
 * <2012-07-31> Maze Game Dojo
-[[https://github.com/bloat/maze-game][The repository]]
-[[http://git.slothrop.net/maze-game/index.html][The results]]
+The [[http://londonclojurians.org][London Clojurians]] group organise a regular Dojo where people get
+together one or two evenings a month and practice some Clojure coding.
+
+Its always a fun event and recently one of the participants wrote a
+server which would allow people to upload code that could play
+battleships. Inspired by this I wrote a similar server which would let
+people write code to solve simple mazes.
+
+There are a few parts to the game. There is code to generate new mazes
+randomly. The maze is contained in a square grid, and the algorithm to
+create a new maze picks a random cell in the grid and grows a new maze
+from that point, putting in new passageways and junctions at
+random. It is called a growing tree alogrithm, and as the name
+suggests it essentially generates a tree within the grid, and there
+are no loops in the generated mazes.
+
+Players must write a function to solve the mazes. The function takes
+arguments describing the view of the maze from its current position,
+and it must return the move it wants to make. Given two functions, the
+code pits them against each other as they try and solve the same
+maze. The winner is the function that gets to the end in the fewest
+number of moves.
+
+The controller portion of the code is responsible for picking the
+functions that will play against each other in each round and keeping
+score.
+
+Finally there is a module for the UI, which is a website that displays
+the current scores and allows players to upload new maze solving
+functions.
+
+[[https://github.com/bloat/maze-game][The code is available]], and the README contains a full description of
+how to write a function to play the game, and how to run the server.
+
+The dojo is a constrained environment in that it is short, only 90
+minutes or so of coding time, and people come with many different
+levels of Clojure experience. Any activity has to be tractable within
+that time - people love to make progress and have something for the
+show and tell session at then end. I think that (more by luck than
+judgement) I came up with a problem that fitted pretty well. Every
+group managed to produce a function that could solve a maze, and the
+scoreboard showed a pretty wide spread of success when the functions
+were raced against each other. The other good thing about this problem
+is that it is easy to think up a very simple strategy that has a good
+chance of solving mazes, i.e. pick a random move each turn. Lots of
+people started with this technique and it proved to be a good base to
+build from.
+
+One thing I did consciously do was to make sure the documentation was
+good enough that people could get the code running quickly - it is a
+real pain in a short dojo to be spending lots of time before you can
+even start thinking about the problem. To this end the README contains
+simple instructions for running the code, generating mazes, and
+testing solver functions.
+
+[[http://git.slothrop.net/maze-game/index.html][The results]] of the evening's coding are archived for posterity. Thanks
+to everyone who took part!
+
 * <2012-06-30> ClojureScript Automata
-[[http://git.slothrop.net/automata][The source code]]
-[[https://github.com/bloat/automata][The repository]]
+I last wrote a web application a long time ago, so I decided it was
+time to dip my toes in the waters again and learn a little bit about
+the modern way to do things. 
+
+In the olden days we wrote JSPs for the front end, and EJBs for the
+backend. For this experiment I didn't worry about any backend and
+decided to write a front end application purely in ClojureScript. So I
+learnt a bit about ClojureScript, CSS and a modern JavaScript API - in
+this case Google Closure.
+
+I also wanted to try my hand at Literate Programming, the technique
+where a program is made more readable by mixing explanation and
+exposition in with the source code. You can then generate a pure
+source code file, or a nicely formatted document from the same source
+file. For this I used [[http://orgmode.org][Org]] and its [[http://orgmode.org/worg/org-contrib/babel/][Babel]] extension.
+
+The program I wrote draws diagrams of one-dimensional cellular
+automata.
+
+I exported the main source file to HTML and [[http://git.slothrop.net/automata][posted it here]].
+
 
