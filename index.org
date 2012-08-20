@@ -8,7 +8,7 @@ In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
 * <2012-09-04> Org Babel Talk
-I am giving a short [[http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487][talk at Skills Matter]] about Org, Babel and
+I am giving a short [[http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487][talk at Skills Matter]] in London about Org, Babel and
 Clojure on the 4th of September 2012.
 
 * <2012-07-31> Maze Game Dojo
@@ -23,7 +23,7 @@ people write code to solve simple mazes.
 There are a few parts to the game. There is code to generate new mazes
 randomly. The maze is contained in a square grid, and the algorithm to
 create a new maze picks a random cell in the grid and grows a new maze
-from that point, putting in new passageways and junctions at
+from that point, putting in new passage ways and junctions at
 random. It is called a growing tree alogrithm, and as the name
 suggests it essentially generates a tree within the grid, and there
 are no loops in the generated mazes.
