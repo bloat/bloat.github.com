@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
+  <channel>
+    <atom:id>git.slothrop.net</atom:id>
+    <lastBuildDate>Thu, 16 Aug 2012 09:43:08 +0000</lastBuildDate>
+    <title>Some Clojure Projects</title>
+    <description>
+    </description>
+    <link>http://git.slothrop.net</link>
+    <managingEditor>andrew.cowper@slothrop.net (Andrew Cowper)</managingEditor>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.1</guid>
+      <pubDate>Mon, 20 Aug 2012 10:56:00 +0000</pubDate>
+      <atom:updated>2012-20-12T12:06:43.775+01:00</atom:updated>
+      <title>ClojureScript Automata</title>
+      <description>
+&lt;p&gt;I last wrote a web application a long time ago, so I decided it was
+time to dip my toes in the waters again and learn a little bit about
+the modern way to do things. 
+&lt;/p&gt;
+&lt;p&gt;
+In the olden days we wrote JSPs for the front end, and EJBs for the
+backend. For this experiment I didn't worry about any backend and
+decided to write a front end application purely in ClojureScript. So I
+learnt a bit about ClojureScript, CSS and a modern JavaScript API - in
+this case Google Closure.
+&lt;/p&gt;
+&lt;p&gt;
+I also wanted to try my hand at Literate Programming, the technique
+where a program is made more readable by mixing explanation and
+exposition in with the source code. You can then generate a pure
+source code file, or a nicely formatted document from the same source
+file. For this I used &lt;a href="http://orgmode.org"&gt;Org&lt;/a&gt; and its &lt;a href="http://orgmode.org/worg/org-contrib/babel/"&gt;Babel&lt;/a&gt; extension.
+&lt;/p&gt;
+&lt;p&gt;
+The program I wrote draws diagrams of one-dimensional cellular
+automata.
+&lt;/p&gt;
+&lt;p&gt;
+I exported the main source file to HTML and &lt;a href="http://git.slothrop.net/automata"&gt;posted it here&lt;/a&gt;.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#clojurescript-automata</link>
+      <author>andrew.cowper@slothrop.net (Andrew Cowper)</author>
+    </item>
+  </channel>
+</rss>
