@@ -64,7 +64,7 @@ a:visited {
     color: #A67740;
 }
 
-li:first-child {
+#text-table-of-contents li:first-child {
     display: none;
 }
 

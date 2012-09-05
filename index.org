@@ -7,6 +7,21 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2012-09-05> Org Babel Clojurescript Talk - Postscript
+Thanks to everyone who came along to the [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][London Clojurians meetup]]
+yesterday. I really enjoyed giving my talk and seeing the other
+presenters ([[http://twitter.com/sw1nn][@sw1nn]] and [[http://twitter.com/philandstuff][@philandstuff]]) do their respective thing.
+
+The talk was mostly about the Org mode emacs extension and how it can
+be used for literate programming. I demoed some nice Org features for
+working with source code, using a mixture of Clojurescript and Elisp.
+
+I've posted some artifacts from my presentation.
+
+- The [[https://raw.github.com/bloat/Org-Babel-Presentation/master/presentation.org][file]] I wrote during the presentation, and the [[http://git.slothrop.net/Org-Babel-Presentation/presentation.html][exported version]].
+- The [[http://git.slothrop.net/Org-Babel-Presentation/links.html][links and bibliography]] file I didn't have time to go through.
+- [[http://skillsmatter.com/podcast/home/lightening-talk-literate-programming-with-clojure-and-org-babel][The video]] (posted by the people at [[http://skillsmatter.com][Skillsmatter]].)
+
 * <2012-09-04> Org Babel Talk
 I am giving a short [[http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487][talk at Skills Matter]] in London about Org, Babel and
 Clojure on the 4th of September 2012.
