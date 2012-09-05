@@ -133,5 +133,35 @@ Clojure on the 4th of September 2012.
       <link>http://git.slothrop.net/#org-babel-talk</link>
       <author>Andrew Cowper</author>
     </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.4</guid>
+      <pubDate>Wed, 5 Sep 2012 10:56:00 +0000</pubDate>
+      <atom:updated>2012-09-05T12:10:56.775+01:00</atom:updated>
+      <title>Org Babel Clojurescript Talk - Postscript</title>
+      <description>
+&lt;p&gt;Thanks to everyone who came along to the &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;London Clojurians meetup&lt;/a&gt;
+yesterday. I really enjoyed giving my talk and seeing the other
+presenters (&lt;a href="http://twitter.com/sw1nn"&gt;@sw1nn&lt;/a&gt; and &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt;) do their respective thing.
+&lt;/p&gt;
+&lt;p&gt;
+The talk was mostly about the Org mode emacs extension and how it can
+be used for literate programming. I demoed some nice Org features for
+working with source code, using a mixture of Clojurescript and Elisp.
+&lt;/p&gt;
+&lt;p&gt;
+I've posted some artifacts from my presentation.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="https://raw.github.com/bloat/Org-Babel-Presentation/master/presentation.org"&gt;file&lt;/a&gt; I wrote during the presentation, and the &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/presentation.html"&gt;exported version&lt;/a&gt;.
+&lt;/li&gt;
+&lt;li&gt;The &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/links.html"&gt;links and bibliography&lt;/a&gt; file I didn't have time to go through.
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/lightening-talk-literate-programming-with-clojure-and-org-babel"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
+&lt;/li&gt;
+&lt;/ul&gt;
+      </description>
+      <link>http://git.slothrop.net/#org-babel-ps</link>
+      <author>Andrew Cowper</author>
+    </item>
   </channel>
 </rss>
