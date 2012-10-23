@@ -7,6 +7,27 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2012-10-23> Yahtzee in Clojure
+I've written a small implementation of the game of [[http://en.wikipedia.org/wiki/Yahtzee][Yahtzee]] in Clojure.
+
+The [[http://github.com/bloat/yahtzee][code is on github]].
+
+The aim was to be as purely functional as possible, and I think I
+achieved this. The only parts of the code that are not purely
+functional are the dice rolling function, for obvious reasons, and the
+UI, which is made a bit more convenient to use by keeping the game
+state for you.
+
+There is also a good separation of the game code from the UI, so I
+could go on to implement other UIs, or plug the game into a game
+server without any changes. I would like to see how easy it is to
+convert my [[https://github.com/bloat/maze-game][maze game dojo]] code so that participants can play Yahtzee
+instead of solving mazes. The maze game allows players to upload
+Clojure code to solve mazes - it would be good to try and extract a
+generic AI competition server, so that implementers can plugin any
+game of their choice. I'm sure there are lots of games for which it
+would be fun to write a robot player in a dojo environment.
+
 * <2012-09-05> Org Babel Clojurescript Talk - Postscript
 Thanks to everyone who came along to the [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][London Clojurians meetup]]
 yesterday. I really enjoyed giving my talk and seeing the other
