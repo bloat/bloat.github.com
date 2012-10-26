@@ -163,5 +163,38 @@ I've posted some artifacts from my presentation.
       <link>http://git.slothrop.net/#org-babel-ps</link>
       <author>Andrew Cowper</author>
     </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.5</guid>
+      <pubDate>Fri, 26 Oct 2012 10:56:00 +0000</pubDate>
+      <atom:updated>2012-10-26T12:10:56.775+01:00</atom:updated>
+      <title>Yahtzee in Clojure</title>
+      <description>
+&lt;p&gt;I've written a small implementation of the game of &lt;a href="http://en.wikipedia.org/wiki/Yahtzee"&gt;Yahtzee&lt;/a&gt; in Clojure.
+&lt;/p&gt;
+&lt;p&gt;
+The &lt;a href="http://github.com/bloat/yahtzee"&gt;code is on github&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The aim was to be as purely functional as possible, and I think I
+achieved this. The only parts of the code that are not purely
+functional are the dice rolling function, for obvious reasons, and the
+UI, which is made a bit more convenient to use by keeping the game
+state for you.
+&lt;/p&gt;
+&lt;p&gt;
+There is also a good separation of the game code from the UI, so I
+could go on to implement other UIs, or plug the game into a game
+server without any changes. I would like to see how easy it is to
+convert my &lt;a href="https://github.com/bloat/maze-game"&gt;maze game dojo&lt;/a&gt; code so that participants can play Yahtzee
+instead of solving mazes. The maze game allows players to upload
+Clojure code to solve mazes - it would be good to try and extract a
+generic AI competition server, so that implementers can plugin any
+game of their choice. I'm sure there are lots of games for which it
+would be fun to write a robot player in a dojo environment.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#yahtzee</link>
+      <author>Andrew Cowper</author>
+    </item>
   </channel>
 </rss>
