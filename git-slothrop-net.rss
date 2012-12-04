@@ -196,5 +196,37 @@ would be fun to write a robot player in a dojo environment.
       <link>http://git.slothrop.net/#yahtzee</link>
       <author>Andrew Cowper</author>
     </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.6</guid>
+      <pubDate>Tue, 4 Dec 2012 10:56:00 +0000</pubDate>
+      <atom:updated>2012-12-04T12:10:56.775+01:00</atom:updated>
+      <title>A Thorny Issue</title>
+      <description>
+&lt;p&gt;I gave a &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;short talk today&lt;/a&gt; about an issue I was having with Clojure
+and Java interop.
+&lt;/p&gt;
+&lt;p&gt;
+The issue in question was how to determine which particular overloaded
+Java method is called when a single Clojure entity satisfies the
+requirements of both methods. The example I used is the submit method
+on the Java &lt;a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html"&gt;ExecutorService&lt;/a&gt;. There are three versions of the submit
+method, and two of them take one argument. One version takes a
+&lt;a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html"&gt;Runnable&lt;/a&gt;, and the other takes a &lt;a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html"&gt;Callable&lt;/a&gt;. A Clojure function
+implements both of these interfaces, so when you try and submit a
+function for an ExecutorService to run, how does Clojure choose which
+submit method to call?
+&lt;/p&gt;
+&lt;p&gt;
+It turns out that it will call the version that takes a Runnable,
+unless you take steps to force it to use the Callable version. The
+various permutations of using type hints, casts, and reify to cause
+this to happen are detailed in the talk, but it the best solution, as
+suggested by &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt; during the talk is to type hint the
+function as a Callable, and the ExecutorService as an ExecutorService.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#thorny</link>
+      <author>Andrew Cowper</author>
+    </item>
   </channel>
 </rss>
