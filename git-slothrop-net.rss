@@ -220,7 +220,7 @@ submit method to call?
 It turns out that it will call the version that takes a Runnable,
 unless you take steps to force it to use the Callable version. The
 various permutations of using type hints, casts, and reify to cause
-this to happen are detailed in the talk, but it the best solution, as
+this to happen are detailed in the talk, but the best solution, as
 suggested by &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt; during the talk is to type hint the
 function as a Callable, and the ExecutorService as an ExecutorService.
 &lt;/p&gt;
