@@ -78,6 +78,12 @@ a:visited {
     font-size: 14px;
 }
 
+.src-clojure {
+    font-family: Lucida Console, Monaco, monospace;
+    background-color: DarkSlateGray;
+    color: Cornsilk;
+}
+
 /*
 This file is part of Andrew's Blog Pages.
 

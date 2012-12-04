@@ -7,6 +7,38 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2012-12-04> A Thorny Issue
+I gave a [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][short talk yesterday]] about an issue I was having with Clojure
+and Java interop.
+
+The issue in question was how to determine which particular overloaded
+Java method is called when a single Clojure entity satisfies the
+requirements of both methods. The example I used is the submit method
+on the Java [[http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html][ExecutorService]]. There are three versions of the submit
+method, and two of them take one argument. One version takes a
+[[http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html][Runnable]], and the other takes a [[http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html][Callable]]. A Clojure function
+implements both of these interfaces, so when you try and submit a
+function for an ExecutorService to run, how does Clojure choose which
+submit method to call?
+
+It turns out that it will call the version that takes a Runnable,
+unless you take steps to force it to use the Callable version. The
+various permutations of using type hints, casts, and reify to cause
+this to happen are detailed in the talk, but it the best solution, as
+suggested by [[http://twitter.com/philandstuff][@philandstuff]] during the talk is to type hint the
+function as a Callable, and the ExecutorService as an ExecutorService.
+
+#+begin_src clojure
+(defn submit-callable-hints [^Callable c ^ExecutorService ex]
+  (.submit ex c))
+#+end_src
+
+Thanks to everyone who came to see the talk. There are a couple of
+artifacts from the presentation.
+
+- The [[https://gist.github.com/4208492][file]] I wrote during the presentation.
+- [[http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop][The video]] (posted by the people at [[http://skillsmatter.com][Skillsmatter]].)
+
 * <2012-10-23> Yahtzee in Clojure
 I've written a small implementation of the game of [[http://en.wikipedia.org/wiki/Yahtzee][Yahtzee]] in Clojure.
 

@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Some Clojure Projects"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2012-10-23T19:14+0100"/>
+<meta name="generated" content="2012-12-04T20:55+0000"/>
 <meta name="author" content="Andrew Cowper"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -124,6 +124,7 @@ for the JavaScript code in this tag.
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#intro">Intro</a></li>
+<li><a href="#thorny"> A Thorny Issue</a></li>
 <li><a href="#yahtzee"> Yahtzee in Clojure</a></li>
 <li><a href="#org-babel-ps"> Org Babel Clojurescript Talk - Postscript</a></li>
 <li><a href="#org-babel-talk"> Org Babel Talk</a></li>
@@ -145,8 +146,58 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-2" class="outline-2">
-<h2 id="yahzee"><span class="timestamp-wrapper"> <span class="timestamp">2012-10-23</span></span> Yahtzee in Clojure</h2>
+<h2 id="thorny"><span class="timestamp-wrapper"> <span class="timestamp">2012-12-04</span></span> A Thorny Issue</h2>
 <div class="outline-text-2" id="text-2">
+
+<p>I gave a <a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487">short talk yesterday</a> about an issue I was having with Clojure
+and Java interop.
+</p>
+<p>
+The issue in question was how to determine which particular overloaded
+Java method is called when a single Clojure entity satisfies the
+requirements of both methods. The example I used is the submit method
+on the Java <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html">ExecutorService</a>. There are three versions of the submit
+method, and two of them take one argument. One version takes a
+<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html">Runnable</a>, and the other takes a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html">Callable</a>. A Clojure function
+implements both of these interfaces, so when you try and submit a
+function for an ExecutorService to run, how does Clojure choose which
+submit method to call?
+</p>
+<p>
+It turns out that it will call the version that takes a Runnable,
+unless you take steps to force it to use the Callable version. The
+various permutations of using type hints, casts, and reify to cause
+this to happen are detailed in the talk, but it the best solution, as
+suggested by <a href="http://twitter.com/philandstuff">@philandstuff</a> during the talk is to type hint the
+function as a Callable, and the ExecutorService as an ExecutorService.
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #00ffff;">defn</span> <span style="color: #63b8ff;">submit-callable-hints</span> [<span style="color: #6ca6cd;">^Callable</span> c <span style="color: #6ca6cd;">^ExecutorService</span> ex]
+  (<span style="color: #6ca6cd;">.submit</span> ex c))
+</pre>
+
+
+<p>
+Thanks to everyone who came to see the talk. There are a couple of
+artifacts from the presentation.
+</p>
+<ul>
+<li>The <a href="https://gist.github.com/4208492">file</a> I wrote during the presentation.
+</li>
+<li><a href="http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop">The video</a> (posted by the people at <a href="http://skillsmatter.com">Skillsmatter</a>.)
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="yahtzee"><span class="timestamp-wrapper"> <span class="timestamp">2012-10-23</span></span> Yahtzee in Clojure</h2>
+<div class="outline-text-2" id="text-3">
 
 <p>I've written a small implementation of the game of <a href="http://en.wikipedia.org/wiki/Yahtzee">Yahtzee</a> in Clojure.
 </p>
@@ -175,9 +226,9 @@ would be fun to write a robot player in a dojo environment.
 
 </div>
 
-<div id="outline-container-3" class="outline-2">
-<h2 id="sec-3"><span class="timestamp-wrapper"> <span class="timestamp">2012-09-05</span></span> Org Babel Clojurescript Talk - Postscript</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-4" class="outline-2">
+<h2 id="org-babel-ps"><span class="timestamp-wrapper"> <span class="timestamp">2012-09-05</span></span> Org Babel Clojurescript Talk - Postscript</h2>
+<div class="outline-text-2" id="text-4">
 
 <p>Thanks to everyone who came along to the <a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487">London Clojurians meetup</a>
 yesterday. I really enjoyed giving my talk and seeing the other
@@ -205,9 +256,9 @@ I've posted some artifacts from my presentation.
 
 </div>
 
-<div id="outline-container-4" class="outline-2">
+<div id="outline-container-5" class="outline-2">
 <h2 id="org-babel-talk"><span class="timestamp-wrapper"> <span class="timestamp">2012-09-04</span></span> Org Babel Talk</h2>
-<div class="outline-text-2" id="text-4">
+<div class="outline-text-2" id="text-5">
 
 <p>I am giving a short <a href="http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487">talk at Skills Matter</a> in London about Org, Babel and
 Clojure on the 4th of September 2012.
@@ -216,9 +267,9 @@ Clojure on the 4th of September 2012.
 
 </div>
 
-<div id="outline-container-5" class="outline-2">
+<div id="outline-container-6" class="outline-2">
 <h2 id="maze-game-dojo"><span class="timestamp-wrapper"> <span class="timestamp">2012-07-31</span></span> Maze Game Dojo</h2>
-<div class="outline-text-2" id="text-5">
+<div class="outline-text-2" id="text-6">
 
 <p>The <a href="http://londonclojurians.org">London Clojurians</a> group organise a regular Dojo where people get
 together one or two evenings a month and practice some Clojure coding.
@@ -291,9 +342,9 @@ to everyone who took part!
 
 </div>
 
-<div id="outline-container-6" class="outline-2">
+<div id="outline-container-7" class="outline-2">
 <h2 id="clojurescript-automata"><span class="timestamp-wrapper"> <span class="timestamp">2012-06-30</span></span> ClojureScript Automata</h2>
-<div class="outline-text-2" id="text-6">
+<div class="outline-text-2" id="text-7">
 
 <p>I last wrote a web application a long time ago, so I decided it was
 time to dip my toes in the waters again and learn a little bit about
@@ -326,7 +377,7 @@ I exported the main source file to HTML and <a href="http://git.slothrop.net/aut
 </div>
 
 <div id="postamble">
-<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2012-10-23T19:14+0100</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2012-12-04T20:55+0000</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
 </div>
 </body>
 </html>
