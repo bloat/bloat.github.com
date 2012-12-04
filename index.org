@@ -8,7 +8,7 @@ In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
 * <2012-12-04> A Thorny Issue
-I gave a [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][short talk yesterday]] about an issue I was having with Clojure
+I gave a [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][short talk today]] about an issue I was having with Clojure
 and Java interop.
 
 The issue in question was how to determine which particular overloaded
