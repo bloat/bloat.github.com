@@ -224,6 +224,24 @@ this to happen are detailed in the talk, but it the best solution, as
 suggested by &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt; during the talk is to type hint the
 function as a Callable, and the ExecutorService as an ExecutorService.
 &lt;/p&gt;
+
+
+
+&lt;pre class="src src-clojure"&gt;(&lt;span style="color: #00ffff;"&gt;defn&lt;/span&gt; &lt;span style="color: #63b8ff;"&gt;submit-callable-hints&lt;/span&gt; [&lt;span style="color: #6ca6cd;"&gt;^Callable&lt;/span&gt; c &lt;span style="color: #6ca6cd;"&gt;^ExecutorService&lt;/span&gt; ex]
+  (&lt;span style="color: #6ca6cd;"&gt;.submit&lt;/span&gt; ex c))
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+Thanks to everyone who came to see the talk. There are a couple of
+artifacts from the presentation.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="https://gist.github.com/4208492"&gt;file&lt;/a&gt; I wrote during the presentation.
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
+&lt;/li&gt;
+&lt;/ul&gt;
       </description>
       <link>http://git.slothrop.net/#thorny</link>
       <author>Andrew Cowper</author>
