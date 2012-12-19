@@ -246,5 +246,54 @@ artifacts from the presentation.
       <link>http://git.slothrop.net/#thorny</link>
       <author>Andrew Cowper</author>
     </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.6</guid>
+      <pubDate>Tue, 19 Dec 2012 10:56:00 +0000</pubDate>
+      <atom:updated>2012-12-19T12:10:56.775+01:00</atom:updated>
+      <title>Maze Logic</title>
+      <description>
+&lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
+programming library core.logic. I decided to have a go myself and see
+if I could use core.logic to solve mazes. I have already written some
+&lt;a href="#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
+core.logic can print out a path between the start and end points of
+the maze.
+&lt;/p&gt;
+&lt;p&gt;
+The answer is that of course it can, but I need to learn to write
+efficient logic code as my first two attempts can not solve mazes of
+any significant size.
+&lt;/p&gt;
+&lt;p&gt;
+There are more details in the project's &lt;a href="https://github.com/bloat/maze.logic/blob/master/README.org"&gt;README&lt;/a&gt;, and of course the
+&lt;a href="https://github.com/bloat/maze.logic"&gt;source code&lt;/a&gt;, all at github.
+&lt;/p&gt;
+&lt;p&gt;
+There will be more attempts posted here, and hopefully I can address
+my performance issues.
+&lt;/p&gt;&lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
+programming library core.logic. I decided to have a go myself and see
+if I could use core.logic to solve mazes. I have already written some
+&lt;a href="#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
+core.logic can print out a path between the start and end points of
+the maze.
+&lt;/p&gt;
+&lt;p&gt;
+The answer is that of course it can, but I need to learn to write
+efficient logic code as my first two attempts can not solve mazes of
+any significant size.
+&lt;/p&gt;
+&lt;p&gt;
+There are more details in the project's &lt;a href="https://github.com/bloat/maze.logic/blob/master/README.org"&gt;README&lt;/a&gt;, and of course the
+&lt;a href="https://github.com/bloat/maze.logic"&gt;source code&lt;/a&gt;, all at github.
+&lt;/p&gt;
+&lt;p&gt;
+There will be more attempts posted here, and hopefully I can address
+my performance issues.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#maze-logic</link>
+      <author>Andrew Cowper</author>
+    </item>
   </channel>
 </rss>

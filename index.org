@@ -7,6 +7,23 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2012-12-19> Maze Logic
+There were two good talks at [[http://skillsmatter.com/event/scala/clojure-exchange][Clojure eXchange]] about Clojure's logic
+programming library core.logic. I decided to have a go myself and see
+if I could use core.logic to solve mazes. I have already written some
+[[#maze-game-dojo][code to generate mazes]], so the challenge is simply to see if
+core.logic can print out a path between the start and end points of
+the maze.
+
+The answer is that of course it can, but I need to learn to write
+efficient logic code as my first two attempts can not solve mazes of
+any significant size.
+
+There are more details in the project's [[https://github.com/bloat/maze.logic/blob/master/README.org][README]], and of course the
+[[https://github.com/bloat/maze.logic][source code]], all at github.
+
+There will be more attempts posted here, and hopefully I can address
+my performance issues.
 * <2012-12-04> A Thorny Issue
 I gave a [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][short talk today]] about an issue I was having with Clojure
 and Java interop.
