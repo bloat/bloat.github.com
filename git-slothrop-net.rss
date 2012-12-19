@@ -255,7 +255,7 @@ artifacts from the presentation.
 &lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
-&lt;a href="#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
+&lt;a href="http://git.slothrop.net/#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
 core.logic can print out a path between the start and end points of
 the maze.
 &lt;/p&gt;
