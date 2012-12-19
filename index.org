@@ -8,7 +8,7 @@ In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
 * <2012-12-19> Maze Logic
-There were two good talks at [[http://skillsmatter.com/event/scala/clojure-exchange][Clojure eXchange]] about Clojure's logic
+There were two good talks at [[http://skillsmatter.com/event/scala/clojure-exchange-2012][Clojure eXchange]] about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
 [[#maze-game-dojo][code to generate mazes]], so the challenge is simply to see if

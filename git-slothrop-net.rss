@@ -252,7 +252,7 @@ artifacts from the presentation.
       <atom:updated>2012-12-19T12:10:56.775+01:00</atom:updated>
       <title>Maze Logic</title>
       <description>
-&lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
+&lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange-2012"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
 &lt;a href="http://git.slothrop.net/#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
