@@ -275,5 +275,25 @@ my performance issues.
       <link>http://git.slothrop.net/#maze-logic</link>
       <author>Andrew Cowper</author>
     </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.7</guid>
+      <pubDate>Wed, 9 Jan 2013 10:56:00 +0000</pubDate>
+      <atom:updated>2013-01-09T12:10:56.775+01:00</atom:updated>
+      <title>Maze Logic - Part II</title>
+      <description>
+&lt;p&gt;Here's another version of a maze solver in core logic. It uses the
+same algorithm as my &lt;a href="#maze-logic"&gt;second previous attempt&lt;/a&gt;, but I'm now using defne
+and matche to deconstruct the incoming logic variables, rather than
+all the work I was doing previously with firsto and resto. It doesn't
+seem to be any faster, but the code is certainly cleaner.
+&lt;/p&gt;
+&lt;p&gt;
+As before there are more details in the project's &lt;a href="https://github.com/bloat/maze.logic/blob/master/README.org"&gt;README&lt;/a&gt;, and the
+&lt;a href="https://github.com/bloat/maze.logic"&gt;source code&lt;/a&gt;, both at github.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#maze-logic-2</link>
+      <author>Andrew Cowper</author>
+    </item>
   </channel>
 </rss>

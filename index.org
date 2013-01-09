@@ -7,6 +7,15 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2013-01-09> Maze Logic - Part II
+Here's another version of a maze solver in core logic. It uses the
+same algorithm as my [[#maze-logic][second previous attempt]], but I'm now using defne
+and matche to deconstruct the incoming logic variables, rather than
+all the work I was doing previously with firsto and resto. It doesn't
+seem to be any faster, but the code is certainly cleaner.
+
+As before there are more details in the project's [[https://github.com/bloat/maze.logic/blob/master/README.org][README]], and the
+[[https://github.com/bloat/maze.logic][source code]], both at github.
 * <2012-12-19> Maze Logic
 There were two good talks at [[http://skillsmatter.com/event/scala/clojure-exchange-2012][Clojure eXchange]] about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
