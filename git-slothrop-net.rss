@@ -282,7 +282,7 @@ my performance issues.
       <title>Maze Logic - Part II</title>
       <description>
 &lt;p&gt;Here's another version of a maze solver in core logic. It uses the
-same algorithm as my &lt;a href="#maze-logic"&gt;second previous attempt&lt;/a&gt;, but I'm now using defne
+same algorithm as my &lt;a href="http://git.slothrop.net/#maze-logic"&gt;second previous attempt&lt;/a&gt;, but I'm now using defne
 and matche to deconstruct the incoming logic variables, rather than
 all the work I was doing previously with firsto and resto. It doesn't
 seem to be any faster, but the code is certainly cleaner.
