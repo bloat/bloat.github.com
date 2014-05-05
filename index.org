@@ -4,10 +4,16 @@
 #+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 #+TITLE: Some Clojure Projects
 * Intro
+  :PROPERTIES:
+  :tag:      intro
+  :END:
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
 * <2013-01-09> Maze Logic - Part II
+  :PROPERTIES:
+  :tag:      maze-logic-2
+  :END:
 Here's another version of a maze solver in core logic. It uses the
 same algorithm as my [[#maze-logic][second previous attempt]], but I'm now using defne
 and matche to deconstruct the incoming logic variables, rather than
@@ -17,6 +23,9 @@ seem to be any faster, but the code is certainly cleaner.
 As before there are more details in the project's [[https://github.com/bloat/maze.logic/blob/master/README.org][README]], and the
 [[https://github.com/bloat/maze.logic][source code]], both at github.
 * <2012-12-19> Maze Logic
+  :PROPERTIES:
+  :tag:      maze-logic
+  :END:
 There were two good talks at [[http://skillsmatter.com/event/scala/clojure-exchange-2012][Clojure eXchange]] about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
@@ -34,6 +43,9 @@ There are more details in the project's [[https://github.com/bloat/maze.logic/bl
 There will be more attempts posted here, and hopefully I can address
 my performance issues.
 * <2012-12-04> A Thorny Issue
+  :PROPERTIES:
+  :tag:      thorny
+  :END:
 I gave a [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][short talk today]] about an issue I was having with Clojure
 and Java interop.
 
@@ -66,6 +78,9 @@ artifacts from the presentation.
 - [[http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop][The video]] (posted by the people at [[http://skillsmatter.com][Skillsmatter]].)
 
 * <2012-10-23> Yahtzee in Clojure
+  :PROPERTIES:
+  :tag:      yahtzee
+  :END:
 I've written a small implementation of the game of [[http://en.wikipedia.org/wiki/Yahtzee][Yahtzee]] in Clojure.
 
 The [[http://github.com/bloat/yahtzee][code is on github]].
@@ -87,6 +102,9 @@ game of their choice. I'm sure there are lots of games for which it
 would be fun to write a robot player in a dojo environment.
 
 * <2012-09-05> Org Babel Clojurescript Talk - Postscript
+  :PROPERTIES:
+  :tag:      org-babel-ps
+  :END:
 Thanks to everyone who came along to the [[http://skillsmatter.com/event/home/london-clojurians-user-group-1487][London Clojurians meetup]]
 yesterday. I really enjoyed giving my talk and seeing the other
 presenters ([[http://twitter.com/sw1nn][@sw1nn]] and [[http://twitter.com/philandstuff][@philandstuff]]) do their respective thing.
@@ -102,10 +120,16 @@ I've posted some artifacts from my presentation.
 - [[http://skillsmatter.com/podcast/home/lightening-talk-literate-programming-with-clojure-and-org-babel][The video]] (posted by the people at [[http://skillsmatter.com][Skillsmatter]].)
 
 * <2012-09-04> Org Babel Talk
+  :PROPERTIES:
+  :tag:      org-babel-talk
+  :END:
 I am giving a short [[http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487][talk at Skills Matter]] in London about Org, Babel and
 Clojure on the 4th of September 2012.
 
 * <2012-07-31> Maze Game Dojo
+  :PROPERTIES:
+  :tag:      maze-game-dojo
+  :END:
 The [[http://londonclojurians.org][London Clojurians]] group organise a regular Dojo where people get
 together one or two evenings a month and practice some Clojure coding.
 
@@ -165,6 +189,9 @@ testing solver functions.
 to everyone who took part!
 
 * <2012-06-30> ClojureScript Automata
+  :PROPERTIES:
+  :tag:      clojurescript-automata
+  :END:
 I last wrote a web application a long time ago, so I decided it was
 time to dip my toes in the waters again and learn a little bit about
 the modern way to do things. 

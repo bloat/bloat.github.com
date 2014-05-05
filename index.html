@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="Some Clojure Projects"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-01-09T18:25+0000"/>
+<meta name="generated" content="2014-05-05T15:14+0100"/>
 <meta name="author" content="Andrew Cowper"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -66,7 +66,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012  Free Software Foundation, Inc.
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -220,8 +220,8 @@ function as a Callable, and the ExecutorService as an ExecutorService.
 
 
 
-<pre class="src src-clojure">(<span style="color: #00ffff;">defn</span> <span style="color: #63b8ff;">submit-callable-hints</span> [<span style="color: #6ca6cd;">^Callable</span> c <span style="color: #6ca6cd;">^ExecutorService</span> ex]
-  (<span style="color: #6ca6cd;">.submit</span> ex c))
+<pre class="example">(defn submit-callable-hints [^Callable c ^ExecutorService ex]
+  (.submit ex c))
 </pre>
 
 
@@ -423,7 +423,7 @@ I exported the main source file to HTML and <a href="http://git.slothrop.net/aut
 </div>
 
 <div id="postamble">
-<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2013-01-09T18:25+0000</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+<p class="contact"><a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a> | @magic_bloat | Created with <a href="http://orgmode.org">Org</a> | 2014-05-05T15:14+0100</p><p class="license"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /><br /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
 </div>
 </body>
 </html>
