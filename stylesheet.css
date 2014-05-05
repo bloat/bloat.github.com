@@ -68,6 +68,10 @@ a:visited {
     display: none;
 }
 
+#text-table-of-contents .timestamp {
+    display: none
+}
+
 .license {
     line-height: 100%;
     font-size: 14px;
@@ -80,7 +84,7 @@ a:visited {
 
 .src-clojure {
     font-family: Lucida Console, Monaco, monospace;
-    background-color: DarkSlateGray;
+    background-color: DarkGray;
     color: Cornsilk;
 }
 
