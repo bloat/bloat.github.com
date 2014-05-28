@@ -2,7 +2,7 @@
 <rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
   <channel>
     <atom:id>git.slothrop.net</atom:id>
-    <lastBuildDate>Thu, 16 Aug 2012 09:43:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 May 2014 19:52:14 +0100</lastBuildDate>
     <title>Some Clojure Projects</title>
     <description>
     </description>
@@ -10,11 +10,12 @@
     <managingEditor>andrew.cowper@slothrop.net (Andrew Cowper)</managingEditor>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.1</guid>
-      <pubDate>Mon, 20 Aug 2012 10:56:00 +0000</pubDate>
-      <atom:updated>2012-20-12T12:06:43.775+01:00</atom:updated>
-      <title>ClojureScript Automata</title>
+      <pubDate>2012-06-30</pubDate>
+      <atom:updated>2012-06-30</atom:updated>
+      <title> ClojureScript Automata</title>
       <description>
-&lt;p&gt;I last wrote a web application a long time ago, so I decided it was
+&lt;p&gt;
+I last wrote a web application a long time ago, so I decided it was
 time to dip my toes in the waters again and learn a little bit about
 the modern way to do things. 
 &lt;/p&gt;
@@ -45,11 +46,12 @@ I exported the main source file to HTML and &lt;a href="http://git.slothrop.net/
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.2</guid>
-      <pubDate>Mon, 20 Aug 2012 10:57:00 +0000</pubDate>
-      <atom:updated>2012-20-12T12:07:43.775+01:00</atom:updated>
-      <title>Maze Game Dojo</title>
+      <pubDate>2012-07-31</pubDate>
+      <atom:updated>2012-07-31</atom:updated>
+      <title> Maze Game Dojo</title>
       <description>
-&lt;p&gt;The &lt;a href="http://londonclojurians.org"&gt;London Clojurians&lt;/a&gt; group organise a regular Dojo where people get
+&lt;p&gt;
+The &lt;a href="http://londonclojurians.org"&gt;London Clojurians&lt;/a&gt; group organise a regular Dojo where people get
 together one or two evenings a month and practice some Clojure coding.
 &lt;/p&gt;
 &lt;p&gt;
@@ -85,8 +87,7 @@ Finally there is a module for the UI, which is a website that displays
 the current scores and allows players to upload new maze solving
 functions.
 &lt;/p&gt;
-&lt;p&gt;
-&lt;a href="https://github.com/bloat/maze-game"&gt;The code is available&lt;/a&gt;, and the README contains a full description of
+&lt;p&gt;&lt;a href="https://github.com/bloat/maze-game"&gt;The code is available&lt;/a&gt;, and the README contains a full description of
 how to write a function to play the game, and how to run the server.
 &lt;/p&gt;
 &lt;p&gt;
@@ -112,8 +113,7 @@ even start thinking about the problem. To this end the README contains
 simple instructions for running the code, generating mazes, and
 testing solver functions.
 &lt;/p&gt;
-&lt;p&gt;
-&lt;a href="http://git.slothrop.net/maze-game/index.html"&gt;The results&lt;/a&gt; of the evening's coding are archived for posterity. Thanks
+&lt;p&gt;&lt;a href="http://git.slothrop.net/maze-game/index.html"&gt;The results&lt;/a&gt; of the evening's coding are archived for posterity. Thanks
 to everyone who took part!
 &lt;/p&gt;
       </description>
@@ -122,11 +122,12 @@ to everyone who took part!
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.3</guid>
-      <pubDate>Mon, 20 Aug 2012 10:58:00 +0000</pubDate>
-      <atom:updated>2012-20-12T12:08:43.775+01:00</atom:updated>
-      <title>Org Babel Talk</title>
+      <pubDate>2012-09-04</pubDate>
+      <atom:updated>2012-09-04</atom:updated>
+      <title> Org Babel Talk</title>
       <description>
-&lt;p&gt;I am giving a short &lt;a href="http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487"&gt;talk at Skills Matter&lt;/a&gt; in London about Org, Babel and
+&lt;p&gt;
+I am giving a short &lt;a href="http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487"&gt;talk at Skills Matter&lt;/a&gt; in London about Org, Babel and
 Clojure on the 4th of September 2012.
 &lt;/p&gt;
       </description>
@@ -135,11 +136,12 @@ Clojure on the 4th of September 2012.
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.4</guid>
-      <pubDate>Wed, 5 Sep 2012 10:56:00 +0000</pubDate>
-      <atom:updated>2012-09-05T12:10:56.775+01:00</atom:updated>
-      <title>Org Babel Clojurescript Talk - Postscript</title>
+      <pubDate>2012-09-05</pubDate>
+      <atom:updated>2012-09-05</atom:updated>
+      <title> Org Babel Clojurescript Talk - Postscript</title>
       <description>
-&lt;p&gt;Thanks to everyone who came along to the &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;London Clojurians meetup&lt;/a&gt;
+&lt;p&gt;
+Thanks to everyone who came along to the &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;London Clojurians meetup&lt;/a&gt;
 yesterday. I really enjoyed giving my talk and seeing the other
 presenters (&lt;a href="http://twitter.com/sw1nn"&gt;@sw1nn&lt;/a&gt; and &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt;) do their respective thing.
 &lt;/p&gt;
@@ -151,25 +153,22 @@ working with source code, using a mixture of Clojurescript and Elisp.
 &lt;p&gt;
 I've posted some artifacts from my presentation.
 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href="https://raw.github.com/bloat/Org-Babel-Presentation/master/presentation.org"&gt;file&lt;/a&gt; I wrote during the presentation, and the &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/presentation.html"&gt;exported version&lt;/a&gt;.
-&lt;/li&gt;
-&lt;li&gt;The &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/links.html"&gt;links and bibliography&lt;/a&gt; file I didn't have time to go through.
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/lightening-talk-literate-programming-with-clojure-and-org-babel"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ul class="org-ul"&gt;&lt;li&gt;The &lt;a href="https://raw.github.com/bloat/Org-Babel-Presentation/master/presentation.org"&gt;file&lt;/a&gt; I wrote during the presentation, and the &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/presentation.html"&gt;exported version&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;The &lt;a href="http://git.slothrop.net/Org-Babel-Presentation/links.html"&gt;links and bibliography&lt;/a&gt; file I didn't have time to go through.
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/lightening-talk-literate-programming-with-clojure-and-org-babel"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
+&lt;/li&gt;&lt;/ul&gt;
       </description>
       <link>http://git.slothrop.net/#org-babel-ps</link>
       <author>Andrew Cowper</author>
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.5</guid>
-      <pubDate>Fri, 26 Oct 2012 10:56:00 +0000</pubDate>
-      <atom:updated>2012-10-26T12:10:56.775+01:00</atom:updated>
-      <title>Yahtzee in Clojure</title>
+      <pubDate>2012-10-23</pubDate>
+      <atom:updated>2012-10-23</atom:updated>
+      <title> Yahtzee in Clojure</title>
       <description>
-&lt;p&gt;I've written a small implementation of the game of &lt;a href="http://en.wikipedia.org/wiki/Yahtzee"&gt;Yahtzee&lt;/a&gt; in Clojure.
+&lt;p&gt;
+I've written a small implementation of the game of &lt;a href="http://en.wikipedia.org/wiki/Yahtzee"&gt;Yahtzee&lt;/a&gt; in Clojure.
 &lt;/p&gt;
 &lt;p&gt;
 The &lt;a href="http://github.com/bloat/yahtzee"&gt;code is on github&lt;/a&gt;.
@@ -198,11 +197,12 @@ would be fun to write a robot player in a dojo environment.
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.6</guid>
-      <pubDate>Tue, 4 Dec 2012 10:56:00 +0000</pubDate>
-      <atom:updated>2012-12-04T12:10:56.775+01:00</atom:updated>
-      <title>A Thorny Issue</title>
+      <pubDate>2012-12-04</pubDate>
+      <atom:updated>2012-12-04</atom:updated>
+      <title> A Thorny Issue</title>
       <description>
-&lt;p&gt;I gave a &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;short talk today&lt;/a&gt; about an issue I was having with Clojure
+&lt;p&gt;
+I gave a &lt;a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487"&gt;short talk today&lt;/a&gt; about an issue I was having with Clojure
 and Java interop.
 &lt;/p&gt;
 &lt;p&gt;
@@ -224,38 +224,31 @@ this to happen are detailed in the talk, but the best solution, as
 suggested by &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt; during the talk is to type hint the
 function as a Callable, and the ExecutorService as an ExecutorService.
 &lt;/p&gt;
-
-
-
-&lt;pre class="src src-clojure"&gt;(&lt;span style="color: #00ffff;"&gt;defn&lt;/span&gt; &lt;span style="color: #63b8ff;"&gt;submit-callable-hints&lt;/span&gt; [&lt;span style="color: #6ca6cd;"&gt;^Callable&lt;/span&gt; c &lt;span style="color: #6ca6cd;"&gt;^ExecutorService&lt;/span&gt; ex]
-  (&lt;span style="color: #6ca6cd;"&gt;.submit&lt;/span&gt; ex c))
-&lt;/pre&gt;
-
-
+&lt;div class="org-src-container"&gt;&lt;pre class="src src-clojure"&gt;(&lt;span style="color: #00ffff;"&gt;defn&lt;/span&gt; &lt;span style="color: #87cefa;"&gt;submit-callable-hints&lt;/span&gt; [&lt;span style="color: #b0c4de;"&gt;^&lt;/span&gt;&lt;span style="color: #98fb98;"&gt;Callable&lt;/span&gt; c &lt;span style="color: #b0c4de;"&gt;^&lt;/span&gt;&lt;span style="color: #98fb98;"&gt;ExecutorService&lt;/span&gt; ex]
+  (&lt;span style="color: #b0c4de;"&gt;.submit&lt;/span&gt; ex c))
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
 Thanks to everyone who came to see the talk. There are a couple of
 artifacts from the presentation.
 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href="https://gist.github.com/4208492"&gt;file&lt;/a&gt; I wrote during the presentation.
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ul class="org-ul"&gt;&lt;li&gt;The &lt;a href="https://gist.github.com/4208492"&gt;file&lt;/a&gt; I wrote during the presentation.
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://skillsmatter.com/podcast/home/a-thorny-issue-in-java-interop"&gt;The video&lt;/a&gt; (posted by the people at &lt;a href="http://skillsmatter.com"&gt;Skillsmatter&lt;/a&gt;.)
+&lt;/li&gt;&lt;/ul&gt;
       </description>
       <link>http://git.slothrop.net/#thorny</link>
       <author>Andrew Cowper</author>
     </item>
     <item>
-      <guid isPermaLink='false'>git.slothrop.net.6</guid>
-      <pubDate>Tue, 19 Dec 2012 10:56:00 +0000</pubDate>
-      <atom:updated>2012-12-19T12:10:56.775+01:00</atom:updated>
-      <title>Maze Logic</title>
+      <guid isPermaLink='false'>git.slothrop.net.7</guid>
+      <pubDate>2012-12-19</pubDate>
+      <atom:updated>2012-12-19</atom:updated>
+      <title> Maze Logic</title>
       <description>
-&lt;p&gt;There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange-2012"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
+&lt;p&gt;
+There were two good talks at &lt;a href="http://skillsmatter.com/event/scala/clojure-exchange-2012"&gt;Clojure eXchange&lt;/a&gt; about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
-&lt;a href="http://git.slothrop.net/#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt;, so the challenge is simply to see if
+&lt;a href="#maze-game-dojo"&gt;code to generate mazes&lt;/a&gt; so the challenge is simply to see if
 core.logic can print out a path between the start and end points of
 the maze.
 &lt;/p&gt;
@@ -271,18 +264,20 @@ There are more details in the project's &lt;a href="https://github.com/bloat/maz
 &lt;p&gt;
 There will be more attempts posted here, and hopefully I can address
 my performance issues.
+&lt;/p&gt;
       </description>
       <link>http://git.slothrop.net/#maze-logic</link>
       <author>Andrew Cowper</author>
     </item>
     <item>
-      <guid isPermaLink='false'>git.slothrop.net.7</guid>
-      <pubDate>Wed, 9 Jan 2013 10:56:00 +0000</pubDate>
-      <atom:updated>2013-01-09T12:10:56.775+01:00</atom:updated>
-      <title>Maze Logic - Part II</title>
+      <guid isPermaLink='false'>git.slothrop.net.8</guid>
+      <pubDate>2013-01-09</pubDate>
+      <atom:updated>2013-01-09</atom:updated>
+      <title> Maze Logic - Part II</title>
       <description>
-&lt;p&gt;Here's another version of a maze solver in core logic. It uses the
-same algorithm as my &lt;a href="http://git.slothrop.net/#maze-logic"&gt;second previous attempt&lt;/a&gt;, but I'm now using defne
+&lt;p&gt;
+Here's another version of a maze solver in core logic. It uses the
+same algorithm as my &lt;a href="#maze-logic"&gt;second previous attempt&lt;/a&gt;, but I'm now using defne
 and matche to deconstruct the incoming logic variables, rather than
 all the work I was doing previously with firsto and resto. It doesn't
 seem to be any faster, but the code is certainly cleaner.
