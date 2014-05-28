@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Some Clojure Projects</title>
-<!-- 2014-05-05 Mon 19:41 -->
+<!-- 2014-05-28 Wed 19:23 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Andrew Cowper" />
@@ -170,7 +170,7 @@ In which I document various projects and diversions executed using
 <div class="outline-text-2" id="text-2">
 <p>
 Here's another version of a maze solver in core logic. It uses the
-same algorithm as my <i>second previous attempt</i>, but I'm now using defne
+same algorithm as my <a href="#maze-logic">second previous attempt</a>, but I'm now using defne
 and matche to deconstruct the incoming logic variables, rather than
 all the work I was doing previously with firsto and resto. It doesn't
 seem to be any faster, but the code is certainly cleaner.
@@ -189,7 +189,7 @@ As before there are more details in the project's <a href="https://github.com/bl
 There were two good talks at <a href="http://skillsmatter.com/event/scala/clojure-exchange-2012">Clojure eXchange</a> about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
 if I could use core.logic to solve mazes. I have already written some
-<i>code to generate mazes</i>, so the challenge is simply to see if
+<a href="#maze-game-dojo">code to generate mazes</a> so the challenge is simply to see if
 core.logic can print out a path between the start and end points of
 the maze.
 </p>
@@ -242,8 +242,8 @@ function as a Callable, and the ExecutorService as an ExecutorService.
 
 <div class="org-src-container">
 
-<pre class="src src-clojure">(<span style="color: #a020f0;">defn</span> <span style="color: #0000ff;">submit-callable-hints</span> [<span style="color: #483d8b;">^Callable</span> c <span style="color: #483d8b;">^ExecutorService</span> ex]
-  (<span style="color: #483d8b;">.submit</span> ex c))
+<pre class="src src-clojure">(<span style="color: #00ffff;">defn</span> <span style="color: #87cefa;">submit-callable-hints</span> [<span style="color: #b0c4de;">^</span><span style="color: #98fb98;">Callable</span> c <span style="color: #b0c4de;">^</span><span style="color: #98fb98;">ExecutorService</span> ex]
+  (<span style="color: #b0c4de;">.submit</span> ex c))
 </pre>
 </div>
 
@@ -456,7 +456,7 @@ I exported the main source file to HTML and <a href="http://git.slothrop.net/aut
 <div id="postamble" class="status">
 <p class="author">Author: Andrew Cowper</p>
 <p class="email">Email: <a href="mailto:andrew.cowper@slothrop.net">andrew.cowper@slothrop.net</a></p>
-<p class="date">Created: 2014-05-05 Mon 19:41</p>
+<p class="date">Created: 2014-05-28 Wed 19:23</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.6)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
