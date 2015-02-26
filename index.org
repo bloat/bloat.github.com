@@ -10,6 +10,44 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2015-02-18> Lisp In Small Pieces (In Clojure)
+  :PROPERTIES:
+  :tag:      small-pieces-3
+  :END:
+[[https://gist.github.com/bloat/7ea25a931e3b2b930100#file-l-i-s-p-chapter-3][This gist]] is chapter 3 of [[http://www.amazon.com/Lisp-Small-Pieces-Christian-Queinnec/dp/0521545668][Lisp In Small Pieces]] - ported to Clojure. It was
+a fairly natural port, since the object system used in chapter 3 (not
+implemented until chapter 11) is easily simulated using Clojure's
+multimethods, and keyword heirarchies. 
+
+Here are some fun forms you can try to evaluate. Bonus points for
+being able to mentally follow what is going on with all the
+continuations flying around!
+
+#+begin_src clojure
+  ;; returns 3, since the throw to the first catch is interrupted 
+  ;; by another throw.
+  (catch 1
+         (catch 2 (* 7
+                     (throw 1 (throw 2 3)))))
+
+  ;; proves that the cleanup form in the unwind protect 
+  ;; is being run during a throw.
+  ((lambda (a) (cons (catch 1
+                            (unwind-protect
+                             (throw 1 89)
+                             (set! a 45)))
+                     a))
+   34)
+
+  ;; proves that the return-from works, and that the cleanup form 
+  ;; in the unwind-protect is being run.
+  ((lambda (a) (cons (block 1 (unwind-protect
+                               (return-from 1 2)
+                               (set! a 89))
+                            3)
+                     a))
+   34)
+#+end_src
 * <2013-01-09> Maze Logic - Part II
   :PROPERTIES:
   :tag:      maze-logic-2

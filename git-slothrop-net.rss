@@ -2,7 +2,7 @@
 <rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
   <channel>
     <atom:id>git.slothrop.net</atom:id>
-    <lastBuildDate>Wed, 28 May 2014 19:52:14 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2015 21:56:36 +0000</lastBuildDate>
     <title>Some Clojure Projects</title>
     <description>
     </description>
@@ -224,8 +224,8 @@ this to happen are detailed in the talk, but the best solution, as
 suggested by &lt;a href="http://twitter.com/philandstuff"&gt;@philandstuff&lt;/a&gt; during the talk is to type hint the
 function as a Callable, and the ExecutorService as an ExecutorService.
 &lt;/p&gt;
-&lt;div class="org-src-container"&gt;&lt;pre class="src src-clojure"&gt;(&lt;span style="color: #00ffff;"&gt;defn&lt;/span&gt; &lt;span style="color: #87cefa;"&gt;submit-callable-hints&lt;/span&gt; [&lt;span style="color: #b0c4de;"&gt;^&lt;/span&gt;&lt;span style="color: #98fb98;"&gt;Callable&lt;/span&gt; c &lt;span style="color: #b0c4de;"&gt;^&lt;/span&gt;&lt;span style="color: #98fb98;"&gt;ExecutorService&lt;/span&gt; ex]
-  (&lt;span style="color: #b0c4de;"&gt;.submit&lt;/span&gt; ex c))
+&lt;div class="org-src-container"&gt;&lt;pre class="src src-clojure"&gt;(&lt;span style="color: #859900;"&gt;defn&lt;/span&gt; &lt;span style="color: #b58900;"&gt;submit-callable-hints&lt;/span&gt; [^&lt;span style="color: #268bd2;"&gt;Callable&lt;/span&gt; c ^&lt;span style="color: #268bd2;"&gt;ExecutorService&lt;/span&gt; ex]
+  (&lt;span style="color: #d33682;"&gt;.submit&lt;/span&gt; ex c))
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;
 Thanks to everyone who came to see the talk. There are a couple of
@@ -288,6 +288,49 @@ As before there are more details in the project's &lt;a href="https://github.com
 &lt;/p&gt;
       </description>
       <link>http://git.slothrop.net/#maze-logic-2</link>
+      <author>Andrew Cowper</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.9</guid>
+      <pubDate>2015-02-18</pubDate>
+      <atom:updated>2015-02-18</atom:updated>
+      <title> Lisp In Small Pieces (In Clojure)</title>
+      <description>
+&lt;p&gt;&lt;a href="https://gist.github.com/bloat/7ea25a931e3b2b930100#file-l-i-s-p-chapter-3"&gt;This gist&lt;/a&gt; is chapter 3 of &lt;a href="http://www.amazon.com/Lisp-Small-Pieces-Christian-Queinnec/dp/0521545668"&gt;Lisp In Small Pieces&lt;/a&gt; - ported to Clojure. It was
+a fairly natural port, since the object system used in chapter 3 (not
+implemented until chapter 11) is easily simulated using Clojure's
+multimethods, and keyword heirarchies. 
+&lt;/p&gt;
+&lt;p&gt;
+Here are some fun forms you can try to evaluate. Bonus points for
+being able to mentally follow what is going on with all the
+continuations flying around!
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;&lt;pre class="src src-clojure"&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;returns 3, since the throw to the first catch is interrupted &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;by another throw.&lt;/span&gt;
+(&lt;span style="color: #859900;"&gt;catch&lt;/span&gt; 1
+       (&lt;span style="color: #859900;"&gt;catch&lt;/span&gt; 2 (* 7
+                   (&lt;span style="color: #859900;"&gt;throw&lt;/span&gt; 1 (&lt;span style="color: #859900;"&gt;throw&lt;/span&gt; 2 3)))))
+
+&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;proves that the cleanup form in the unwind protect &lt;/span&gt;
+&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;is being run during a throw.&lt;/span&gt;
+((&lt;span style="color: #859900;"&gt;lambda&lt;/span&gt; (a) (cons (&lt;span style="color: #859900;"&gt;catch&lt;/span&gt; 1
+                          (&lt;span style="color: #859900;"&gt;unwind-protect&lt;/span&gt;
+                           (&lt;span style="color: #859900;"&gt;throw&lt;/span&gt; 1 89)
+                           (&lt;span style="color: #859900;"&gt;set!&lt;/span&gt; a 45)))
+                   a))
+ 34)
+
+&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;proves that the return-from works, and that the cleanup form &lt;/span&gt;
+&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;in the unwind-protect is being run.&lt;/span&gt;
+((&lt;span style="color: #859900;"&gt;lambda&lt;/span&gt; (a) (cons (&lt;span style="color: #859900;"&gt;block&lt;/span&gt; 1 (&lt;span style="color: #859900;"&gt;unwind-protect&lt;/span&gt;
+                             (&lt;span style="color: #859900;"&gt;return-from&lt;/span&gt; 1 2)
+                             (&lt;span style="color: #859900;"&gt;set!&lt;/span&gt; a 89))
+                          3)
+                   a))
+ 34)
+&lt;/pre&gt;&lt;/div&gt;
+      </description>
+      <link>http://git.slothrop.net/#small-pieces-3</link>
       <author>Andrew Cowper</author>
     </item>
   </channel>
