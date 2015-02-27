@@ -10,7 +10,7 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
-* <2015-02-18> Lisp In Small Pieces (In Clojure)
+* <2015-02-27> Lisp In Small Pieces (In Clojure)
   :PROPERTIES:
   :tag:      small-pieces-3
   :END:

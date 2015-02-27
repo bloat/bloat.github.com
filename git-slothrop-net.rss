@@ -2,7 +2,7 @@
 <rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
   <channel>
     <atom:id>git.slothrop.net</atom:id>
-    <lastBuildDate>Thu, 26 Feb 2015 21:56:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2015 19:02:58 +0000</lastBuildDate>
     <title>Some Clojure Projects</title>
     <description>
     </description>
@@ -292,8 +292,8 @@ As before there are more details in the project's &lt;a href="https://github.com
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.9</guid>
-      <pubDate>2015-02-18</pubDate>
-      <atom:updated>2015-02-18</atom:updated>
+      <pubDate>2015-02-27</pubDate>
+      <atom:updated>2015-02-27</atom:updated>
       <title> Lisp In Small Pieces (In Clojure)</title>
       <description>
 &lt;p&gt;&lt;a href="https://gist.github.com/bloat/7ea25a931e3b2b930100#file-l-i-s-p-chapter-3"&gt;This gist&lt;/a&gt; is chapter 3 of &lt;a href="http://www.amazon.com/Lisp-Small-Pieces-Christian-Queinnec/dp/0521545668"&gt;Lisp In Small Pieces&lt;/a&gt; - ported to Clojure. It was
