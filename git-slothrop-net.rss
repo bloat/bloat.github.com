@@ -2,7 +2,7 @@
 <rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
   <channel>
     <atom:id>git.slothrop.net</atom:id>
-    <lastBuildDate>Fri, 27 Feb 2015 19:02:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri,  5 May 2017 21:14:44 +0100</lastBuildDate>
     <title>Some Clojure Projects</title>
     <description>
     </description>
@@ -306,7 +306,7 @@ Here are some fun forms you can try to evaluate. Bonus points for
 being able to mentally follow what is going on with all the
 continuations flying around!
 &lt;/p&gt;
-&lt;div class="org-src-container"&gt;&lt;pre class="src src-clojure"&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;returns 3, since the throw to the first catch is interrupted &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;by another throw.&lt;/span&gt;
+&lt;div class="org-src-container"&gt;&lt;pre class="src src-scheme"&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;returns 3, since the throw to the first catch is interrupted &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;;; &lt;/span&gt;&lt;span style="color: #586e75; font-style: italic;"&gt;by another throw.&lt;/span&gt;
 (&lt;span style="color: #859900;"&gt;catch&lt;/span&gt; 1
        (&lt;span style="color: #859900;"&gt;catch&lt;/span&gt; 2 (* 7
                    (&lt;span style="color: #859900;"&gt;throw&lt;/span&gt; 1 (&lt;span style="color: #859900;"&gt;throw&lt;/span&gt; 2 3)))))
@@ -331,6 +331,27 @@ continuations flying around!
 &lt;/pre&gt;&lt;/div&gt;
       </description>
       <link>http://git.slothrop.net/#small-pieces-3</link>
+      <author>Andrew Cowper</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>git.slothrop.net.10</guid>
+      <pubDate>2017-04-29</pubDate>
+      <atom:updated>2017-04-29</atom:updated>
+      <title> A Starter ClojureScript Project</title>
+      <description>
+&lt;p&gt;
+In the spirit of shaving as many yaks as possible, I created a
+ClojureScript project to be the base of any actual ClojureScript
+programming I might (or might not) do. 
+&lt;/p&gt;
+&lt;p&gt;
+It's the simplest project I could create that provides a browser
+connected ClojureScript repl using &lt;a href="http://boot-clj.com/"&gt;Boot&lt;/a&gt; and &lt;a href="https://cider.readthedocs.io/en/latest/"&gt;Cider&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/bloat/bare-cljs"&gt;Here it is&lt;/a&gt; on Github.
+&lt;/p&gt;
+      </description>
+      <link>http://git.slothrop.net/#bare-cljs</link>
       <author>Andrew Cowper</author>
     </item>
   </channel>
