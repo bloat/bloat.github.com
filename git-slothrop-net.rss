@@ -2,7 +2,7 @@
 <rss xmlns:atom='http://www.w3.org/2005/Atom' version='2.0'>
   <channel>
     <atom:id>git.slothrop.net</atom:id>
-    <lastBuildDate>Fri,  5 May 2017 21:14:44 +0100</lastBuildDate>
+    <lastBuildDate>Fri,  5 May 2017 23:45:03 +0100</lastBuildDate>
     <title>Some Clojure Projects</title>
     <description>
     </description>
@@ -335,8 +335,8 @@ continuations flying around!
     </item>
     <item>
       <guid isPermaLink='false'>git.slothrop.net.10</guid>
-      <pubDate>2017-04-29</pubDate>
-      <atom:updated>2017-04-29</atom:updated>
+      <pubDate>2017-05-06</pubDate>
+      <atom:updated>2017-05-06</atom:updated>
       <title> A Starter ClojureScript Project</title>
       <description>
 &lt;p&gt;

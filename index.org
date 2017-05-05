@@ -10,7 +10,7 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
-* <2017-04-29> A Starter ClojureScript Project
+* <2017-05-06> A Starter ClojureScript Project
   :PROPERTIES:
   :tag:      bare-cljs
   :END:
