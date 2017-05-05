@@ -10,6 +10,18 @@
 In which I document various projects and diversions executed using
 [[http://clojure.org][Clojure]].
 
+* <2017-04-29> A Starter ClojureScript Project
+  :PROPERTIES:
+  :tag:      bare-cljs
+  :END:
+In the spirit of shaving as many yaks as possible, I created a
+ClojureScript project to be the base of any actual ClojureScript
+programming I might (or might not) do. 
+
+It's the simplest project I could create that provides a browser
+connected ClojureScript repl using [[http://boot-clj.com/][Boot]] and [[https://cider.readthedocs.io/en/latest/][Cider]].
+
+[[https://github.com/bloat/bare-cljs][Here it is]] on Github.
 * <2015-02-27> Lisp In Small Pieces (In Clojure)
   :PROPERTIES:
   :tag:      small-pieces-3
@@ -23,7 +35,7 @@ Here are some fun forms you can try to evaluate. Bonus points for
 being able to mentally follow what is going on with all the
 continuations flying around!
 
-#+begin_src clojure
+#+begin_src scheme
   ;; returns 3, since the throw to the first catch is interrupted 
   ;; by another throw.
   (catch 1

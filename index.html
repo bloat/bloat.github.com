@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Some Clojure Projects</title>
-<!-- 2015-02-27 Fri 19:02 -->
+<!-- 2017-05-05 Fri 21:14 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Andrew Cowper" />
@@ -144,6 +144,7 @@ for the JavaScript code in this tag.
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#intro">Intro</a></li>
+<li><a href="#bare-cljs"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-29&gt;</span></span> A Starter ClojureScript Project</a></li>
 <li><a href="#small-pieces-3"><span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-27&gt;</span></span> Lisp In Small Pieces (In Clojure)</a></li>
 <li><a href="#maze-logic-2"><span class="timestamp-wrapper"><span class="timestamp">&lt;2013-01-09&gt;</span></span> Maze Logic - Part II</a></li>
 <li><a href="#maze-logic"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-12-19&gt;</span></span> Maze Logic</a></li>
@@ -167,8 +168,27 @@ In which I document various projects and diversions executed using
 </div>
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="small-pieces-3"><span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-27&gt;</span></span> Lisp In Small Pieces (In Clojure)</h2>
+<h2 id="bare-cljs"><span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-29&gt;</span></span> A Starter ClojureScript Project</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+In the spirit of shaving as many yaks as possible, I created a
+ClojureScript project to be the base of any actual ClojureScript
+programming I might (or might not) do. 
+</p>
+
+<p>
+It's the simplest project I could create that provides a browser
+connected ClojureScript repl using <a href="http://boot-clj.com/">Boot</a> and <a href="https://cider.readthedocs.io/en/latest/">Cider</a>.
+</p>
+
+<p>
+<a href="https://github.com/bloat/bare-cljs">Here it is</a> on Github.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="small-pieces-3"><span class="timestamp-wrapper"><span class="timestamp">&lt;2015-02-27&gt;</span></span> Lisp In Small Pieces (In Clojure)</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 <a href="https://gist.github.com/bloat/7ea25a931e3b2b930100#file-l-i-s-p-chapter-3">This gist</a> is chapter 3 of <a href="http://www.amazon.com/Lisp-Small-Pieces-Christian-Queinnec/dp/0521545668">Lisp In Small Pieces</a> - ported to Clojure. It was
 a fairly natural port, since the object system used in chapter 3 (not
@@ -184,7 +204,7 @@ continuations flying around!
 
 <div class="org-src-container">
 
-<pre class="src src-clojure"><span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">returns 3, since the throw to the first catch is interrupted </span>
+<pre class="src src-scheme"><span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">returns 3, since the throw to the first catch is interrupted </span>
 <span style="color: #586e75; font-style: italic;">;; </span><span style="color: #586e75; font-style: italic;">by another throw.</span>
 (<span style="color: #859900;">catch</span> 1
        (<span style="color: #859900;">catch</span> 2 (* 7
@@ -211,9 +231,9 @@ continuations flying around!
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
+<div id="outline-container-sec-4" class="outline-2">
 <h2 id="maze-logic-2"><span class="timestamp-wrapper"><span class="timestamp">&lt;2013-01-09&gt;</span></span> Maze Logic - Part II</h2>
-<div class="outline-text-2" id="text-3">
+<div class="outline-text-2" id="text-4">
 <p>
 Here's another version of a maze solver in core logic. It uses the
 same algorithm as my <a href="#maze-logic">second previous attempt</a>, but I'm now using defne
@@ -228,9 +248,9 @@ As before there are more details in the project's <a href="https://github.com/bl
 </p>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
+<div id="outline-container-sec-5" class="outline-2">
 <h2 id="maze-logic"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-12-19&gt;</span></span> Maze Logic</h2>
-<div class="outline-text-2" id="text-4">
+<div class="outline-text-2" id="text-5">
 <p>
 There were two good talks at <a href="http://skillsmatter.com/event/scala/clojure-exchange-2012">Clojure eXchange</a> about Clojure's logic
 programming library core.logic. I decided to have a go myself and see
@@ -257,9 +277,9 @@ my performance issues.
 </p>
 </div>
 </div>
-<div id="outline-container-sec-5" class="outline-2">
+<div id="outline-container-sec-6" class="outline-2">
 <h2 id="thorny"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-12-04&gt;</span></span> A Thorny Issue</h2>
-<div class="outline-text-2" id="text-5">
+<div class="outline-text-2" id="text-6">
 <p>
 I gave a <a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487">short talk today</a> about an issue I was having with Clojure
 and Java interop.
@@ -307,9 +327,9 @@ artifacts from the presentation.
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
+<div id="outline-container-sec-7" class="outline-2">
 <h2 id="yahtzee"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-10-23&gt;</span></span> Yahtzee in Clojure</h2>
-<div class="outline-text-2" id="text-6">
+<div class="outline-text-2" id="text-7">
 <p>
 I've written a small implementation of the game of <a href="http://en.wikipedia.org/wiki/Yahtzee">Yahtzee</a> in Clojure.
 </p>
@@ -340,9 +360,9 @@ would be fun to write a robot player in a dojo environment.
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
+<div id="outline-container-sec-8" class="outline-2">
 <h2 id="org-babel-ps"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-09-05&gt;</span></span> Org Babel Clojurescript Talk - Postscript</h2>
-<div class="outline-text-2" id="text-7">
+<div class="outline-text-2" id="text-8">
 <p>
 Thanks to everyone who came along to the <a href="http://skillsmatter.com/event/home/london-clojurians-user-group-1487">London Clojurians meetup</a>
 yesterday. I really enjoyed giving my talk and seeing the other
@@ -370,9 +390,9 @@ I've posted some artifacts from my presentation.
 </div>
 </div>
 
-<div id="outline-container-sec-8" class="outline-2">
+<div id="outline-container-sec-9" class="outline-2">
 <h2 id="org-babel-talk"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-09-04&gt;</span></span> Org Babel Talk</h2>
-<div class="outline-text-2" id="text-8">
+<div class="outline-text-2" id="text-9">
 <p>
 I am giving a short <a href="http://skillsmatter.com/event/clojure/london-clojurians-user-group-1487">talk at Skills Matter</a> in London about Org, Babel and
 Clojure on the 4th of September 2012.
@@ -380,9 +400,9 @@ Clojure on the 4th of September 2012.
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
+<div id="outline-container-sec-10" class="outline-2">
 <h2 id="maze-game-dojo"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-07-31&gt;</span></span> Maze Game Dojo</h2>
-<div class="outline-text-2" id="text-9">
+<div class="outline-text-2" id="text-10">
 <p>
 The <a href="http://londonclojurians.org">London Clojurians</a> group organise a regular Dojo where people get
 together one or two evenings a month and practice some Clojure coding.
@@ -463,9 +483,9 @@ to everyone who took part!
 </div>
 </div>
 
-<div id="outline-container-sec-10" class="outline-2">
+<div id="outline-container-sec-11" class="outline-2">
 <h2 id="clojurescript-automata"><span class="timestamp-wrapper"><span class="timestamp">&lt;2012-06-30&gt;</span></span> ClojureScript Automata</h2>
-<div class="outline-text-2" id="text-10">
+<div class="outline-text-2" id="text-11">
 <p>
 I last wrote a web application a long time ago, so I decided it was
 time to dip my toes in the waters again and learn a little bit about

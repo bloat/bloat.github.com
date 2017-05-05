@@ -1,3 +1,4 @@
+(require 'htmlize)
 
 (defun slothrop-blog-fix-tags (org-buffer html-buffer)
   (interactive "bOrg Buffer: \nbHTML Buffer: ")
@@ -126,3 +127,11 @@
     (save-buffer html-buffer)
     (slothrop-blog-to-rss html-buffer rss-buffer)
     (save-buffer rss-buffer)))
+
+;; Makes the export of the scheme snippet a bit prettier.
+(font-lock-add-keywords 'scheme-mode '(("catch" . font-lock-keyword-face)
+                                       ("unwind-protect" . font-lock-keyword-face)
+                                       ("throw" . font-lock-keyword-face)
+                                       ("set!" . font-lock-keyword-face)
+                                       ("return-from" . font-lock-keyword-face)
+                                       ("block" . font-lock-keyword-face)))
